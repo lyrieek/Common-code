@@ -169,11 +169,7 @@ console.log(isSupportSVG());
 
 ```javascript
 function isSupportCanvas() {
-    if(document.createElement('canvas').getContext){
-        return true;
-    }else{
-        return false;
-    }
+    return !!window["HTMLCanvasElement"];
 }
 
 console.log(isSupportCanvas());
